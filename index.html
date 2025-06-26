@@ -67,11 +67,9 @@
   </section>
   <section id="contact">
     <h2>Contact</h2>
-    <form name="contact" id="contact">
-     <!--  <input type="hidden" name="form-name" value="contact" />
-  <p hidden>
-    <label>Don’t fill this out: <input name="bot-field" /></label>
-  </p> -->
+   <form name="contact" id="contact-form" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html">
+  <input type="hidden" name="form-name" value="contact" />
+  <p hidden><input name="bot-field" /></p>
       <input type="text" placeholder="Your Name" required >
       <input type="email" placeholder="Your Email" required >
       <textarea placeholder="Your Message" required></textarea>
