@@ -67,7 +67,7 @@
   </section>
   <section id="contact">
     <h2>Contact</h2>
-    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="index.html">
       <input type="hidden" name="form-name" value="contact" />
   <p hidden>
     <label>Don’t fill this out: <input name="bot-field" /></label>
@@ -76,8 +76,6 @@
       <input type="email" placeholder="Your Email" required >
       <textarea placeholder="Your Message" required></textarea>
       <div class="g-recaptcha" data-sitekey="6LfJZm4rAAAAAKlx4HMhCTqCVURgLX_K-8HRaQ4z"></div>
-
-  <p><button type="submit">Send</button></p>
       <button type="submit">Send</button>
     </form>
   </section>
