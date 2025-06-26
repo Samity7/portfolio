@@ -6,6 +6,8 @@
 	<title>Samuel Tesfaye | Portfolio</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="jst.js">
+  
+
 </head>
 <body class="home">
 	<header>
@@ -65,17 +67,24 @@
   </section>
   <section id="contact">
     <h2>Contact</h2>
-    <form>
+    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="contact" />
+  <p hidden>
+    <label>Don’t fill this out: <input name="bot-field" /></label>
+  </p>
       <input type="text" placeholder="Your Name" required >
       <input type="email" placeholder="Your Email" required >
       <textarea placeholder="Your Message" required></textarea>
+      <div class="g-recaptcha" data-sitekey="6LfJZm4rAAAAAKlx4HMhCTqCVURgLX_K-8HRaQ4z"></div>
+
+  <p><button type="submit">Send</button></p>
       <button type="submit">Send</button>
     </form>
   </section>
  <footer>
     <p>&copy; 2025 Samuel Tesfaye</p>
   </footer>
-
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <script src="script.js"></script>
 </body>
 </html>
